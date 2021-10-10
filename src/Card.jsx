@@ -1,11 +1,21 @@
 import React from 'react'
-const Card = (props)=>{
+import facts  from './facts'
+const Card = ()=>{
   return(
-    <>
+    <div className="main-card">
 
-    <h1> {props.info}</h1>
+    {  facts.map((fact,index)=>{
+        return(
+          <>
+          <h1>Fact No :{index} </h1>
+          <div classname="semi-card">
+          <h2>{fact}</h2>
+          </div>
+          </>
+        )
+    })   }
     
-    </>
+    </div>
   )
 }
 

@@ -2,13 +2,12 @@
 import './App.css';
 import Card from './Card';
 
-function App() {
+const App = () => {
   return (
     <div>
-    <h1>Hallow Your facts are here</h1><hr />
-    <Card info=" india having most young population"  />
+    <Card />
     </div>
-  );
+  )
 }
 
 export default App;
