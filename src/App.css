@@ -1,23 +1,54 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+   /* align-items: center; */
+  justify-content: center;
+}
 
+.card{
 
-.main-card{
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 210px 80px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  grid-template-areas: "image" "text" "status";
+  border-radius: 18px;
+  background: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  text-align: center;
+  margin: 25px 25px;
+}
 
-  padding-left: 10px ;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-style: normal;
-  margin: 10px;
-  background-color: beige;
+.card-image{
+            grid-area: image;
+            background: url('C:\Users\harsh\Desktop\facts\facty\src\pic1.jpg');
+            border-top-left-radius:15px;
+            border-top-right-radius:15px;
+            background-size: cover;
 
 
 }
+.card-text{
+  grid-area:text;
+  margin: 25px;
+}
+.card-status{
+  grid-area: status;
+}
 
-h2{
+.card h2{
+  color: rgb(27, 18, 18);
+  font-size: 25px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  background-color: rgb(89, 236, 236);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 5px;
-  padding:5px
-
+.card h1{
+  color:rgb(40, 159, 214);
+  margin-top: 0px;
+  font-size: 22px;
+  text-transform: capitalize;
 }
 
 .semi-card{
