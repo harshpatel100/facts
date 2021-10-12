@@ -1,9 +1,18 @@
-body{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-   /* align-items: center; */
+.card{
+
+  width: 40vw;
+  height: 80vh;
+  display: flex; 
+    /* align-items: center;  */
   justify-content: center;
+  /* overflow: hidden; */
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .card{
@@ -14,7 +23,7 @@ body{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   grid-template-areas: "image" "text" "status";
   border-radius: 18px;
-  background: white;
+  background: rgb(247, 242, 242);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   text-align: center;
   margin: 25px 25px;
@@ -26,7 +35,7 @@ body{
             border-top-left-radius:15px;
             border-top-right-radius:15px;
             background-size: cover;
-
+margin-top: 20px;
 
 }
 .card-text{
@@ -57,3 +66,49 @@ body{
   margin:5px;
 
 }
+
+li,a,button{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color:black;
+  text-decoration: none;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: rgb(179, 221, 245);
+
+}
+
+.nav-link{
+  list-style: none;
+}
+
+.nav-link li {
+  display: inline-block;
+  padding: 12px;
+}
+.nav-link li a{
+  transition: all 0.35s ease 0s;
+}
+.nav-link li a:hover{
+  color: white;
+}
+button{
+  cursor: pointer;
+  padding: 9px 25px;
+  background-color: antiquewhite;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.35s ease 0s;
+}
+button:hover{
+  color: #61dafb;
+}
+

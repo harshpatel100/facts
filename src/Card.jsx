@@ -11,6 +11,7 @@ const Card = ()=>{
           <div className="card-text">
           <h1>Fact No :{index} </h1>
           <h2>{fact}</h2>
+          <div className="card-status">  </div>
           </div>
           </div>
         )
